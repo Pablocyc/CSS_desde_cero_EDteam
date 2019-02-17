@@ -1,23 +1,12 @@
 
-
-#title {
-  background: yellow;
-  color: red;
+body {
+  font-size: 2em;
 }
 
-#description {
-  background: green;
-  color: white;
+ul * {
+  display: none;
 }
 
-#😀 {
-  color: white;
-  background: purple;
-}
-
-.bold {
-  font-weight: bold;
-}
-.center {
-  text-align: center;
+span {
+  display: block;
 }
