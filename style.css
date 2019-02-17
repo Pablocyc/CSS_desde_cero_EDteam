@@ -1,11 +1,23 @@
 
 
-h1 {
+.title {
   background: yellow;
   color: red;
 }
 
-p {
+.description {
   background: green;
   color: white;
+}
+
+.😀 {
+  color: white;
+  background: purple;
+}
+
+.bold {
+  font-weight: bold;
+}
+.center {
+  text-align: center;
 }
