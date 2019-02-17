@@ -3,10 +3,10 @@ body {
   font-size: 2em;
 }
 
-ul * {
-  display: none;
+DIV {
+  color: red;
 }
 
-span {
-  display: block;
+.Parrafo {
+  background: yellow;
 }
