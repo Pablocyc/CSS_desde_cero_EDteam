@@ -1,16 +1,16 @@
 
 
-.title {
+#title {
   background: yellow;
   color: red;
 }
 
-.description {
+#description {
   background: green;
   color: white;
 }
 
-.😀 {
+#😀 {
   color: white;
   background: purple;
 }
