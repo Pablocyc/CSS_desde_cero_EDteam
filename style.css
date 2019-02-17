@@ -7,21 +7,14 @@ body {
   font-size: 2em;
 }
 
-.title-1 {
-  color: var(--color-title);
-}
-.title-2 {
-  color: var(--color-subtitle);
+.enabled {
+  display: none;
 }
 
-.subtitle {
-  font-size: .5em;
-  margin-top: -2em;
+.check:checked + .enabled{
+  display: block;
 }
 
-.title-1 + .subtitle {
-  color: var(--color-title);
-}
-.title-2 + .subtitle {
-  color: var(--color-subtitle);
+.check:checked ~ .disabled {
+  display: none;
 }
