@@ -1,12 +1,27 @@
+:root {
+  --color-title: green;
+  --color-subtitle: purple;
+}
 
 body {
   font-size: 2em;
 }
 
-li > ul {
-  display: none;
+.title-1 {
+  color: var(--color-title);
+}
+.title-2 {
+  color: var(--color-subtitle);
 }
 
-li:hover ul{
-  display: block;
+.subtitle {
+  font-size: .5em;
+  margin-top: -2em;
+}
+
+.title-1 + .subtitle {
+  color: var(--color-title);
+}
+.title-2 + .subtitle {
+  color: var(--color-subtitle);
 }
