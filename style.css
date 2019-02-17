@@ -3,8 +3,10 @@ body {
   font-size: 2em;
 }
 
-ul.list{
-  /* ESPECIFICIDAD */
-  color: red;
+li > ul {
+  display: none;
 }
 
+li:hover ul{
+  display: block;
+}
