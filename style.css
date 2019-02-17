@@ -3,7 +3,8 @@ body {
   font-size: 2em;
 }
 
-.title, 
-.parrafo {
+ul.list{
+  /* ESPECIFICIDAD */
   color: red;
 }
+
