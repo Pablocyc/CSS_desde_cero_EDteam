@@ -1,0 +1,3 @@
+# CSS Desde Cero (2018)
+
+CSS es el lenguaje que hace a la web hermosa. Sin CSS los sitios web y aplicaciones móviles se verían feos y aburridos. Con este curso aprenderás a diseñar para la web usando código CSS, entenderás como funciona el responsive web design y serás capaz de crear tus propios templates y dejar de descargarlos de internet. Además hemos actualizado el curso para incluir módulos nuevos de CSS (como variables, grid, etc).
