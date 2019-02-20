@@ -1,20 +1,17 @@
-:root {
-  --color-title: green;
-  --color-subtitle: purple;
-}
-
 body {
   font-size: 2em;
 }
 
-.enabled {
-  display: none;
+[type="email"] {
+  border: 1px solid blue;
 }
 
-.check:checked + .enabled{
-  display: block;
+[type="submit"] {
+  background: red;
+  color: white;
+  border: none;
 }
 
-.check:checked ~ .disabled {
-  display: none;
+[required] {
+  border: 2px solid red;
 }
