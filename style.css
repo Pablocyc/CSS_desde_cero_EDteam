@@ -2,13 +2,8 @@ body {
   font-size: 2em;
 }
 
-a {
-  background: url(/external-link-symbol.png) no-repeat center right / 2rem;
-  padding-right: 2.2rem;
-}
-
-[href^="/"],
-[href^="https://ed.team"] {
+[href$=".pdf"] {
   color: red;
-  background: none;
+  background: url(/pdf.png) no-repeat center right / 2rem;
+  padding-right: 2.2rem;
 }
