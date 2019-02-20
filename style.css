@@ -2,16 +2,13 @@ body {
   font-size: 2em;
 }
 
-[type="email"] {
-  border: 1px solid blue;
+a {
+  background: url(/external-link-symbol.png) no-repeat center right / 2rem;
+  padding-right: 2.2rem;
 }
 
-[type="submit"] {
-  background: red;
-  color: white;
-  border: none;
-}
-
-[required] {
-  border: 2px solid red;
+[href^="/"],
+[href^="https://ed.team"] {
+  color: red;
+  background: none;
 }
