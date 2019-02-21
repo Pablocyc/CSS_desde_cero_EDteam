@@ -2,20 +2,15 @@ body {
   font-size: 2em;
 }
 
-.small {
-  font-size: .75em;
-}
-.normal {
-  font-size: 1em;
-}
-.big {
-  font-size: 2em;
+.post p.post-description {
+  color: purple !important;
 }
 
-.post-description {
-  color: red;
+.post p.post-description {
+  color: red !important;
 }
 
-.product-description {
-  color: blue;
+.post p.post-description {
+  color: green !important;
 }
+
