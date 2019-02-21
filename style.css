@@ -2,18 +2,20 @@ body {
   font-size: 2em;
 }
 
-[class*="button-"] {
-  display: inline-block;
-  margin: 1em;
-  padding: 1em 2em;
-  text-decoration: none;
-  color: white;
+.small {
+  font-size: .75em;
+}
+.normal {
+  font-size: 1em;
+}
+.big {
+  font-size: 2em;
 }
 
-.button-cta {
-  background: orange;
+.post-description {
+  color: red;
 }
 
-.button-alert {
-  background: red;
+.product-description {
+  color: blue;
 }
