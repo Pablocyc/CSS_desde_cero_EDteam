@@ -2,15 +2,6 @@ body {
   font-size: 2em;
 }
 
-.post p.post-description {
-  color: purple !important;
+span {
+  font-size: .5em;
 }
-
-.post p.post-description {
-  color: red !important;
-}
-
-.post p.post-description {
-  color: green !important;
-}
-
