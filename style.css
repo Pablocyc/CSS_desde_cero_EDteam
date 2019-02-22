@@ -6,20 +6,17 @@
 .box {
   width: 300px;
   height: 300px;
-  background: transparent;
-  color: green;
+  background: green;
   margin: 100px auto;
 
-  border: 150px solid;
-  border-color: blue transparent transparent;
+  /* border-radius: 50px; */
 
-  /* border-top: 150px solid blue;
-  border-right: 150px solid transparent;
-  border-bottom: 150px solid transparent;
-  border-left: 150px solid transparent; */
+  /* border-top-left-radius: 100px;
+  border-top-right-radius: 200px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 300px; */
 
+  /* border-radius: 100px 200px 50px 300px; */
 
-  /* border-style: solid dashed;
-  border-color: blue transparent transparent transparent;
-  border-width: 150px; */
+  border-top-right-radius: 100px 150px;
 }
