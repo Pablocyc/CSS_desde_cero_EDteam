@@ -1,20 +1,25 @@
 
-.box {
-  width: 500px;
-  height: 500px;
-  background-image: url('https://ed.team/../static/images/logo-alt.svg');
-  background-color: yellow;
-  margin: 100px auto;
-  background-repeat: no-repeat;
-  background-size: 50%;
+body {
+  padding-bottom: 100em;
   
-  /* background-position: 50px; */
-  /* background-position: 20px 20px; */
-  /* background-position: 10% 50%; */
+  
 
-  background-position: 50%;
-  /* background-position: top right; */
-  /* background-position: center top; */
-  background-position: bottom 20px right 20px;
+}
 
+p {
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+  font-size: 2em;
+}
+
+.parallax {
+  padding: 5em 0;
+  background-image: url('https://static3.ideal.es/www/multimedia/201802/07/media/cortadas/tigre-kRuC-U50913173378kcD-624x385@Ideal.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: right top;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+  font-size: 2em;
 }
