@@ -4,13 +4,24 @@
 
 
 .box {
-  --border-radius-x: 60px;
-  --border-radius-y: 150px;
   padding-top: 0.1px;
-  width: 500px;
-  height: 350px;
+  width: 200px;
+  height: 200px;
+  color: green;
+  /* border-radius: 50%; */
   background: hsl(10, 90%, 50%);
   margin: 100px auto;
-  outline: 50px solid black;
+
+  box-shadow: 5px 8px 10px -3px rgba(0, 0, 0, .8)
+
+  /* box-shadow: 0 50px 0 yellow inset,
+              0 100px 0 green inset,
+              0 150px 0 blue inset; */
+
+  /* box-shadow: -6px -6px 40px rgba(0, 0, 0, .5) inset; */
+
+  /* box-shadow: 0 0 0 10px blue,
+              0 0 0 20px green,
+              0 0 0 30px yellow; */
 }
 
