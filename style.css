@@ -2,13 +2,19 @@
 .box {
   width: 500px;
   height: 500px;
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/228448/stranger-things.jpg');
-  box-shadow: 5px 10px 30px -10px #000;
+  background-image: url('https://ed.team/../static/images/logo-alt.svg');
+  background-color: yellow;
   margin: 100px auto;
-
   background-repeat: no-repeat;
-  /* background-size: 100% 100%; */
-  /* background-size: contain; */
-  /* background-size: cover; */
-  background-size: auto;
+  background-size: 50%;
+  
+  /* background-position: 50px; */
+  /* background-position: 20px 20px; */
+  /* background-position: 10% 50%; */
+
+  background-position: 50%;
+  /* background-position: top right; */
+  /* background-position: center top; */
+  background-position: bottom 20px right 20px;
+
 }
