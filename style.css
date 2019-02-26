@@ -1,4 +1,6 @@
 
 body {
-  background-color: purple;
+  background-color: yellow;
+  background-image: url('https://cimg.tvgcdn.net/i/2018/12/31/a27850a9-ce12-4d2d-95b2-891a7f187058/053ce2a90704993a9c2739198a1c78fb/stranger-things-season3.jpg');
+  background-repeat: repeat-x;
 }
