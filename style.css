@@ -2,15 +2,14 @@ body {
   font-size: 2em;
 }
 
-h1 {
-  color: yellow;
-  text-align: center;
-  /* text-shadow: 2px 2px 2px #444; */
-  text-shadow: 1px 1px 0 red,
-               -1px -1px 0 red;
-}
+p {
+  width: 130px;
+  margin: 2em auto;
+  border: 2px solid black;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
-text {
-  stroke: red;
-  stroke-width: 2px;
+  /* word-break: break-all; */
+  /* word-wrap: break-word; */
+
 }
