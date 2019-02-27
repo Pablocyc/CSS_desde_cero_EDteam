@@ -17,5 +17,9 @@ div {
   height: 300px;
   background: yellow;
   text-align: center;
-  line-height: 300px;
+}
+
+span {
+  font-size: .5em;
+  vertical-align: bottom;
 }
