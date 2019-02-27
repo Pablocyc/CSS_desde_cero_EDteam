@@ -1,20 +1,9 @@
 
-body {
-  height: 100vh;
-  /* background-image: 
-  url('https://static3.ideal.es/www/multimedia/201802/07/media/cortadas/tigre-kRuC-U50913173378kcD-624x385@Ideal.jpg'), 
-  url('https://cumbrepuebloscop20.org/wp-content/uploads/2018/08/white-tiger-2407799_640-1.jpg'),
-  url('http://viajar.especiales.elperiodico.com/50-viajes-extraordinarios/files/2013/05/selva-del-tigre.jpg');
-  background-color: yellow;
-  background-size: 25%, 50%, contain;
-  background-repeat: no-repeat;
-  background-position: 0 20px, bottom 20px right 20px, center; */
-  
-  background: 
-  url('https://static3.ideal.es/www/multimedia/201802/07/media/cortadas/tigre-kRuC-U50913173378kcD-624x385@Ideal.jpg') 0 20px / 25%,
-  url('https://cumbrepuebloscop20.org/wp-content/uploads/2018/08/white-tiger-2407799_640-1.jpg') bottom 20px right 20px / 25%,
-  url('http://viajar.especiales.elperiodico.com/50-viajes-extraordinarios/files/2013/05/selva-del-tigre.jpg') center / contain, yellow;
+h1 {
+  font-size: 4em;
+}
 
-  background-repeat: no-repeat;
-
+span {
+  font-size: 4rem;
+  color: red;
 }
