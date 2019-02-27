@@ -3,13 +3,7 @@ body {
 }
 
 p {
-  width: 130px;
-  margin: 2em auto;
-  border: 2px solid black;
-  overflow: hidden;
-  text-overflow: ellipsis;
-
-  /* word-break: break-all; */
-  /* word-wrap: break-word; */
+  writing-mode: vertical-lr;
+  text-orientation: upright;
 
 }
