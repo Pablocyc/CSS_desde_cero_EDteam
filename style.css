@@ -4,6 +4,9 @@ body {
 
 
 p {
+  margin: 2em;
   /* direction: rtl; */
-  text-indent: 2em;
+  /* text-indent: 2em; */
+  text-align: right;
+  text-align-last: left;
 }
