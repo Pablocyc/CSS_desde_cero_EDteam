@@ -1,9 +1,9 @@
-
-h1 {
-  font-size: 4em;
+body {
+  font-size: 2em;
 }
 
-span {
-  font-size: 4rem;
-  color: red;
+
+p {
+  /* direction: rtl; */
+  text-indent: 2em;
 }
