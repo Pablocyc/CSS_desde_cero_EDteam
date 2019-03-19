@@ -3,9 +3,6 @@ rem -> tamaño de fuente relativo a html (fijo)
 em -> tamaño de fuente relativo al contexto (variable)
 */
 
-:root {
-  font-size: 30px;
-}
 
 body {
   /* font-family: Verdana, Arial, sans-serif; */
@@ -14,6 +11,8 @@ body {
 
 article {
   font-size: 8em;
+  font-weight: 400;
+  font-style: italic;
 }
 
 span {
