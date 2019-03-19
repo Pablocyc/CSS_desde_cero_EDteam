@@ -1,6 +1,21 @@
+/* 
+rem -> tamaño de fuente relativo a html (fijo) 
+em -> tamaño de fuente relativo al contexto (variable)
+*/
+
+:root {
+  font-size: 30px;
+}
+
 body {
-  font-size: 5em;
   /* font-family: Verdana, Arial, sans-serif; */
   font-family: Georgia, 'Times New Roman', Times, serif, serif'
 }
 
+article {
+  font-size: 8em;
+}
+
+span {
+  font-size: 1rem;
+}
