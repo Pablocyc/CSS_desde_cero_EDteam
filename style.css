@@ -1,12 +1,18 @@
 body {
-  font-size: 1.5em;
+  font-size: 2em;
+  margin: 1em;
   /* text-align: center; */
 }
 
-h1 {
-  font-size: 2em;
+p {
+  /* display: inline; */
 }
-h1::first-line {
-  text-transform: uppercase;
-  font-size: 1.5em;
+
+p:last-child::first-letter {
+  color: red;
+  font-size: 2.3em;
+  margin-right: .1em;
+  float: left;
+  line-height: 1;
+  font-family: serif;
 }
