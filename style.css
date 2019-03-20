@@ -8,7 +8,7 @@ h1 {
 }
 
 h1::before {
-  content: attr(class);
+  content: url(https://ed.team/static/images/logo.svg);
   display: block;
   font-size: .5em;
   background: hsla(60, 100%, 50%, .3);
