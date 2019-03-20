@@ -3,20 +3,13 @@ body {
   margin: 1em;
 }
 
-h1 {
-  display: table;
+.box {
+  /* width: 400px; */
+  background: red;
 }
 
-h1::after {
+.box::before {
   content: '';
   display: block;
-  height: 3px;
-  background-color: red;
-  transform: scale(0, 1);
-  transform-origin: center left;
-  transition: transform .25s;
-}
-
-h1:hover::after {
-  transform: scale(1, 1);
+  padding-bottom: 56.25%;
 }
