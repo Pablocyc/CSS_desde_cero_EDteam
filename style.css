@@ -1,18 +1,16 @@
 body {
   font-size: 2em;
   margin: 1em;
-  /* text-align: center; */
 }
 
-p {
-  /* display: inline; */
+h1 {
+
 }
 
-p:last-child::first-letter {
-  color: red;
-  font-size: 2.3em;
-  margin-right: .1em;
-  float: left;
-  line-height: 1;
-  font-family: serif;
+h1::before {
+  content: 'Hola mundo ';
+}
+
+h1::after {
+  content: ' como estan';
 }
