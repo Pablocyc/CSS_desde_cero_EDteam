@@ -3,16 +3,20 @@ body {
   margin: 1em;
 }
 
-.usd::before {
-  content: '$ ';
-}
-.pen::before {
-  content: 'S/ ';
-}
-.bob::before {
-  content: 'Bs. '
+h1 {
+  display: table;
 }
 
-.two-decimals::after {
-  content: '.00'
+h1::after {
+  content: '';
+  display: block;
+  height: 3px;
+  background-color: red;
+  transform: scale(0, 1);
+  transform-origin: center left;
+  transition: transform .25s;
+}
+
+h1:hover::after {
+  transform: scale(1, 1);
 }
