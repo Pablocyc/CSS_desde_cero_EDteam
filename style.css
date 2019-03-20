@@ -4,11 +4,14 @@ body {
 }
 
 h1 {
-
+  border: 1px solid #000;
 }
 
 h1::before {
-  content: 'Hola mundo ';
+  content: attr(class);
+  display: block;
+  font-size: .5em;
+  background: hsla(60, 100%, 50%, .3);
 }
 
 h1::after {
