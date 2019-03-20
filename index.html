@@ -5,16 +5,141 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
-  <title>CSS Desde Cero - Clase 1</title>
-  <style>
-    
-  </style>
+  <title>CSS Desde Cero</title>
 </head>
 <body>
+ <header class="header">
+   <h1>Pseudoclases</h1>
+   <p>Estilos especiales dependiendo del contexto, posicion o estado.</p>
+ </header>
+
+ <main class="main">
   <article>
+    <h2>
+      <code>:root</code>
+    </h2>
     <p>
-      Hola <span>mundo</span>
+      La pseudo-clase de CSS :root selecciona el elemento raiz de un documento.
+      Aplicando a HTML, :root representa el elemento &lt;html&gt; y es identico al selector html, excepto que su nivel de especificidad es mayor. Sirve para declarar variables CSS.
     </p>
   </article>
+
+  <article>
+    <h2>
+      <code>:hover</code>
+    </h2>
+    <p>
+      La pseudo-clase de CSS :hover se presenta cuando el usuario coloca el puntero sobre algún elemento, pero no necesariamente está activo. En pantallas touch :hover es problemático.
+    </p>
+  </article>
+
+  <article>
+    <h2>
+      <code>:active</code>
+    </h2>
+    <p>
+      La pseudo-clase :active de Css cubre el caso en el que un elemento está siendo activado por el usuario. Cuando se interactúa con el ratón, se corresponde al momento en el que el usuario presiona el botón del ratón hasta el momento en el que lo suelta. A menudo es usado en los elementos &lt;a&gt; y &lt;button&gt; de HTML.
+    </p>
+    <p>
+      El orden si importa:
+    </p>
+    <ol>
+      <li>
+        <code>:link {...}</code>
+      </li>
+      <li>
+        <code>:visited {...}</code>
+      </li>
+      <li>
+        <code>:hover {...}</code>
+      </li>
+      <li>
+        <code>:active {...}</code>
+      </li>
+    </ol>
+  </article>
+
+  <article>
+    <h2>
+      <code>:target</code>
+    </h2>
+    <p>
+      La pseudo-clase :target representa el elemento único, si existe alguno, con un id coicidente con el identificador de fragmentos de la URI del documento.
+    </p>
+    <p>
+      <a href="#modal">Modal con CSS</a>
+    </p>
+  </article>
+
+  <div id="modal" class="modal">
+    <aside class="modal-box">
+      <h2>Hola soy un bonito modal con CSS</h2>
+      <form>
+        <input type="email" placeholder="email">
+        <input type="password" placeholder="password">
+        <input type="submit" value="Enviar">
+      </form>
+      <a href="#">cerrar</a>
+    </aside>
+  </div>
+
+  <article>
+    <h2>
+      <code>:nth-child :first-child :last-child</code>
+    </h2>
+    <ul>
+      <li>
+        <code>nth-child</code>:selecciona el elemento indicado que sea enésimo hijo de su elemento padre.
+      </li>
+      <li>
+        <code>first-child</code>: selecciona el elemento indicado que sea el primer hijo de su elemento padre.
+      </li>
+      <li>
+        <code>last-child</code>: selecciona el elemento indicado que sea el último hijo de su elemento padre.
+      </li>
+    </ul>
+  </article>
+
+  <article>
+    <h2>
+      <code>:nth-of-type :first-of-type :last-of-type</code>
+    </h2>
+    <ul>
+      <li>
+        <code>nth-of-type</code>: selecciona el elemento indicando que sea el enésimo hijo en su tipo sin importar la jerarquía dentro del elemento padre. 
+      </li>
+      <li>
+        <code>first-of-type</code>: selecciona el elemento indicado que sea el primer hijo en su tipo sin importar la jerarquía dentro del elemento padre.
+      </li>
+      <li>
+        <code>last-of-type</code>: selecciona el elemento indicado que sea el último hijo en su tipo sin importar la jerarquía dentro del elemento padre. 
+      </li>
+    </ul>
+    <p>
+      <a href="https://css-tricks.com/examples/nth-child-tester/" target="_blank">Ejemplo interactivo</a>
+    </p>
+  </article>
+  
+  <article>
+    <h2>
+      <code>:not</code>
+    </h2>
+    <p>
+      La pseudo-clase CSS de negación, :not(X), es una notación funcional que toma un selector simple X como argumento. Coincide con un elemento que no está representado por el argumento. X no debe contener otro selector de negación.
+    </p>
+  </article>
+
+  <article>
+    <h2>
+      <code>:empty</code>
+    </h2>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p>La pseudo-clase :empty corresponde a un elemento sin ningún nodo hijo. Sólo cuando hay nodos de elemento o texto con uno o más caracteres dentro del elemento, ése se convierte en vacío.</p>
+  </article>
+ </main>
 </body> 
 </html>
