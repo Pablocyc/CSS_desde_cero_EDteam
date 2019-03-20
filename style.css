@@ -3,13 +3,16 @@ body {
   margin: 1em;
 }
 
-h1 {
-  quotes: '\201C' '\201D';
+.usd::before {
+  content: '$ ';
+}
+.pen::before {
+  content: 'S/ ';
+}
+.bob::before {
+  content: 'Bs. '
 }
 
-h1::before {
-  content: open-quote;
-}
-h1::after {
-  content: close-quote;
+.two-decimals::after {
+  content: '.00'
 }
