@@ -4,16 +4,12 @@ body {
 }
 
 h1 {
-  border: 1px solid #000;
+  quotes: '\201C' '\201D';
 }
 
 h1::before {
-  content: url(https://ed.team/static/images/logo.svg);
-  display: block;
-  font-size: .5em;
-  background: hsla(60, 100%, 50%, .3);
+  content: open-quote;
 }
-
 h1::after {
-  content: ' como estan';
+  content: close-quote;
 }
