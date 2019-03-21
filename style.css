@@ -1,24 +1,18 @@
 body {
-  font-size: 1em;
-  padding: 1em;
+  font-size: 1.5em;
 }
 
-ol, ul {
-  /* border: 1px solid #000; */
-  padding-top: 10px;
-  padding-bottom: 10px;
-  list-style-position: inside;
-  /* padding-left: 2em; */
+.chapters {
+  counter-reset: chapter;
 }
 
-li {
-  /* border: 1px solid red; */
-  margin-top: 10px;
-  padding-left: 1em;
+.chapter {
+  counter-increment: chapter;
+}
+
+.chapter::before {
+  content: counter(chapter) '. ';
   color: red;
-}
-
-span {
-  color: initial;
+  /* margin-right: .25em; */
 }
 
