@@ -3,6 +3,6 @@ body {
   padding: 1em;
 }
 
-span {
-  display: list-item;
+ol, ul {
+  list-style-type: lower-roman;
 }
