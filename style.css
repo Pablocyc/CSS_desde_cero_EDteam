@@ -16,3 +16,18 @@ body {
   /* margin-right: .25em; */
 }
 
+ol {
+  counter-reset: list;
+}
+
+li {
+  counter-increment: list;
+  list-style: none;
+}
+
+li::before {
+  content: counters(list, '.') '. ';
+  color: red;
+  font-size: .75em;
+  margin-right: .5em;
+}
