@@ -1,28 +1,5 @@
 body {
-  font-size: 1em;
-  padding: 1em;
-}
-
-.temary {
-  counter-reset: clases;
-}
-
-.class {
-  counter-increment: clases;
-  counter-reset: topics;
-}
-
-.class-title::before {
-  content: counter(clases) '. ';
-}
-
-.class-topic {
-  counter-increment: topics;
-  padding-left: .5em;
-}
-
-.class-topic::before {
-  content: counter(clases) '.' counter(topics) '. ';
-  font-size: .75em;
   color: red;
+
+  background-color: currentColor;
 }
