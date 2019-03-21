@@ -1,33 +1,28 @@
 body {
-  font-size: 1.5em;
+  font-size: 1em;
+  padding: 1em;
 }
 
-.chapters {
-  counter-reset: chapter;
+.temary {
+  counter-reset: clases;
 }
 
-.chapter {
-  counter-increment: chapter;
+.class {
+  counter-increment: clases;
+  counter-reset: topics;
 }
 
-.chapter::before {
-  content: counter(chapter) '. ';
-  color: red;
-  /* margin-right: .25em; */
+.class-title::before {
+  content: counter(clases) '. ';
 }
 
-ol {
-  counter-reset: list;
+.class-topic {
+  counter-increment: topics;
+  padding-left: .5em;
 }
 
-li {
-  counter-increment: list;
-  list-style: none;
-}
-
-li::before {
-  content: counters(list, '.') '. ';
-  color: red;
+.class-topic::before {
+  content: counter(clases) '.' counter(topics) '. ';
   font-size: .75em;
-  margin-right: .5em;
+  color: red;
 }
