@@ -1,6 +1,4 @@
 body {
-  /* background-color: rgba(255, 255, 0, .5); */
-  background-color: #ff0;
-  background-color: #f0f;
-  background-color: #0ff;
+  background-color: hsla(200, 90%, 50%, .5);
+  
 }
