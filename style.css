@@ -1,7 +1,9 @@
 body {
   min-height: 100vh;
-  /* background-image: linear-gradient(
-    to bottom left, red, yellow, lime); */
-  
-    background-image: repeating-linear-gradient(yellow 0, yellow 50px, red 50px, red 80px);
+  background-image: radial-gradient(
+    500px, yellow, red, cyan, purple);
+  /* background-image: radial-gradient(
+    500px 2000px ellipse, yellow, red, cyan, purple); */
+  /* background-image: radial-gradient(
+    at -500px -200px, yellow, red, cyan, purple); */
 }
