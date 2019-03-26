@@ -1,6 +1,7 @@
 body {
   min-height: 100vh;
-  background-image: linear-gradient(
-    red 200px, yellow 400px);
-    /* red 50%, yellow 50%); */
+  /* background-image: linear-gradient(
+    to bottom left, red, yellow, lime); */
+  
+    background-image: repeating-linear-gradient(yellow 0, yellow 50px, red 50px, red 80px);
 }
