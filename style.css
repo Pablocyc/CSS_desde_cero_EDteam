@@ -4,18 +4,20 @@ body {
 
 h1 {
   position: relative;
-  border-top: 1px solid #000;
-  bottom: 40px;
+  top: .5em;
 }
 
 
 .p1 {
+  position: relative;
+  top: 5.5em;
   color: red;
 
 }
 .p2 {
   color: lime;
-
+  position: relative;
+  top: -5.5em;
 }
 .p3 {
   color: blue;
@@ -23,15 +25,13 @@ h1 {
 
 /*
 
-  position: static | relative | absolute | fixed | sticky
+  position: relative
 
-  Propiedades offset
-    Mueven un elemento posicionado
-    segun el borde indicado
-      * top
-      * right
-      * bottom
-      * left
+  * Su referencia es su posicion inicial.
+  * Aplicar position: relative a un elemento
+    no modifica en nada su layout.
+  * Al moverlo, con las propiedades offset,
+    reserva su espacio.
 
 */
 
