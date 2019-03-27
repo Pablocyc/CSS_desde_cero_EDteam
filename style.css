@@ -1,57 +1,42 @@
 body {
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
-h1 {
-  background: yellow;
-  width: 200px;
+.menu {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+  background: #444;
+}
+
+.submenu {
   position: absolute;
+  top: 100%;
+  display: none;
 }
 
+.submenu .submenu {
+  top: 0;
+  left: 100%;
+}
 
-.p1 {
+.menu-item {
   position: relative;
-  top: 5.5em;
-  color: red;
-}
-.p2 {
-  color: lime;
-  position: relative;
-  top: -5.5em;
-}
-.p3 {
-  color: blue;
 }
 
-.box {
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  background: yellow;
+.menu-item:hover {
+  background: rgba(0, 0, 0, .5);
 }
 
-span {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-  border: 1px solid #000;
-  text-align: center;
-  line-height: 50px;
+.menu-item:hover > .submenu {
+  display: block;
 }
 
-/*
-
-  position: absolute
-
-  * Pierde su posicion en el flujo y no
-    reserva su espacio.
-  * Si tenia dimensiones fijas se mantinen,
-    si tenia dimensiones automaticas se
-    ajustaran a su contenido.
-  * Su referencia es su ancestro posicionado
-    mas cercano.
-
-*/
-
+.menu-link {
+  text-decoration: none;
+  color: #ddd;
+  display: block;
+  padding: .5em 1em;
+}
