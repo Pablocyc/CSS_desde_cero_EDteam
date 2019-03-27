@@ -1,42 +1,32 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
-.menu {
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  display: flex;
-  background: #444;
-}
-
-.submenu {
-  position: absolute;
-  top: 100%;
-  display: none;
-}
-
-.submenu .submenu {
-  top: 0;
-  left: 100%;
-}
-
-.menu-item {
+.card {
+  width: 400px;
   position: relative;
 }
 
-.menu-item:hover {
-  background: rgba(0, 0, 0, .5);
-}
-
-.menu-item:hover > .submenu {
+.card-img {
+  width: 100%;
   display: block;
 }
 
-.menu-link {
-  text-decoration: none;
-  color: #ddd;
-  display: block;
-  padding: .5em 1em;
+.card-title {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, .75);
+  color: #fff;
+  width: 100%;
+  /* height: 100%; */
+  margin: 0;
+  padding: .5em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
