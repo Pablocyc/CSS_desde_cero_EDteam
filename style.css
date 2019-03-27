@@ -1,29 +1,41 @@
-/*
-
-  position: static
-            relative | absolute | fixed | sticky
-
-  offset properties
-          top | right | bottom | left
-
-  Un elemento posicionado tiene una referencia (contexto)
-
-  relative: su referencia es su posicion              inicial.
-  absolute: su referencia es su ancestro              posicionado más cercano.
-
-  fixed: fijo (no se mueve con el scroll),         relativo al viewport.
-         Se ignora en el flujo.
-         Sus dimensiones automaticas se restringen a su contenido
-
-  sticky: combinación de position relative y fixed.
-*/
-
-body {
-  margin-top: 3rem;
+:root {
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
 }
 
-h2 {
-  position: sticky;
-  top: 10px;
-  background: #fff;
+.dad {
+  width: 500px;
+  height: 500px;
+  background: hsla(60, 100%, 50%, .5);
+  position: relative;
+}
+
+.son {
+  --size: 150px;
+  width: var(--size);
+  height: var(--size);
+  text-align: center;
+  font-size: 3em;
+  line-height: var(--size);
+  position: absolute;
+  opacity: .85;
+}
+
+.son:first-child {
+  background: hsl(300, 100%, 50%);
+  z-index: 1;
+}
+.son:nth-child(2) {
+  background: hsl(220, 100%, 50%);
+  top: 75px;
+  left: 75px;
+}
+.son:last-child {
+  background: hsl(100, 100%, 50%);
+  top: 120px;
+  left: 120px;
+  z-index: 99999999;
 }
