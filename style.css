@@ -11,6 +11,7 @@
   height: 500px;
   background: hsla(60, 100%, 50%, .5);
   position: relative;
+  overflow: hidden;
 }
 
 .son {
@@ -26,16 +27,23 @@
 
 .son:first-child {
   background: hsl(300, 100%, 50%);
-  z-index: 1;
+  z-index: var(--z-back);
+  opacity: 0;
 }
 .son:nth-child(2) {
   background: hsl(220, 100%, 50%);
   top: 75px;
   left: 75px;
+  opacity: 0;
 }
 .son:last-child {
   background: hsl(100, 100%, 50%);
-  top: 120px;
-  left: 120px;
-  z-index: 99999999;
+  top: 500px;
+  left: 500px;
+  z-index: 1;
+}
+
+.dad:hover .son:last-child {
+  top: 175px;
+  left: 175px;
 }
