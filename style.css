@@ -1,16 +1,19 @@
 body {
   min-height: 100vh;
-  /* background-image: radial-gradient(
-    closest-corner circle, yellow, red, cyan, purple); */
-  background-image: repeating-radial-gradient(
-    circle,white 0, white 20px, black 20px, black 40px
-  )
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }
 
-/* .box {
+.box {
   width: 400px;
   height: 400px;
-  margin: 2em auto;
-  background: radial-gradient(closest-side, yellow 100%,
-   red 100%);
-} */
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px;
+  background: radial-gradient(circle at 50%      25%, black 5%, transparent 5%),
+  radial-gradient(circle at 50% 75%, white 5%, transparent 5%),
+    radial-gradient(closest-side circle at 50% 25%, white 100%, transparent 100%), 
+    radial-gradient(closest-side circle at 50% 75%, black 100%, transparent 100%),
+    linear-gradient(to right,
+    white 50%, black 50%)
+}
