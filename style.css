@@ -14,36 +14,16 @@
   fixed: fijo (no se mueve con el scroll),         relativo al viewport.
          Se ignora en el flujo.
          Sus dimensiones automaticas se restringen a su contenido
+
+  sticky: combinación de position relative y fixed.
 */
 
 body {
   margin-top: 3rem;
 }
 
-.main-header {
-  background: yellow;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  height: 3rem;
+h2 {
+  position: sticky;
+  top: 10px;
+  background: #fff;
 }
-
-.logo {
-  height: 2rem;
-  display: block;
-  margin-top: .5rem;
-  margin-left: .5rem;
-}
-
-:target {
-  padding-top: 4rem;
-}
-
-main {
-  padding-top: 1em;
-}
-
-h1 {
-  margin-top: 0;
-}
-
