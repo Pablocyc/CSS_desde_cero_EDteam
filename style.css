@@ -1,9 +1,16 @@
 body {
   min-height: 100vh;
-  background-image: radial-gradient(
-    500px, yellow, red, cyan, purple);
   /* background-image: radial-gradient(
-    500px 2000px ellipse, yellow, red, cyan, purple); */
-  /* background-image: radial-gradient(
-    at -500px -200px, yellow, red, cyan, purple); */
+    closest-corner circle, yellow, red, cyan, purple); */
+  background-image: repeating-radial-gradient(
+    circle,white 0, white 20px, black 20px, black 40px
+  )
 }
+
+/* .box {
+  width: 400px;
+  height: 400px;
+  margin: 2em auto;
+  background: radial-gradient(closest-side, yellow 100%,
+   red 100%);
+} */
